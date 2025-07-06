@@ -1,0 +1,18 @@
+[package]
+name = "anarchy_core"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+axum = { version = "0.7.5", features = ["ws"] } # Обновлено до 0.7.5
+sqlx = { version = "0.7.4", features = ["runtime-tokio-rustls", "postgres"] }
+serde = { version = "1.0", features = ["derive"] }
+serde_json = "1.0"
+jsonwebtoken = "9.0.0" # Обновлено до 9.0.0
+bcrypt = "0.15.0" # Обновлено до 0.15.0
+tokio = { version = "1.0", features = ["full"] }
+tower-http = { version = "0.5.2", features = ["cors"] } # Обновлено до 0.5.2
+chrono = "0.4"
+dotenv = "0.15"
+futures = "0.3.31"
+tracing = "0.1.41"
